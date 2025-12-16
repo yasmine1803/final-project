@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PopCorn | Browse Films</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Fixed Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo/Title -->
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <h1>PopCorn</h1>
+            </div>
+            
+            <!-- Search Input -->
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="search-input" placeholder="Search movies...">
+            </div>
+            
+            <!-- Genre Filter -->
+            <div class="filter-container">
+                <select id="genre-filter">
+                    <option value="all">All Genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Thriller">Thriller</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Romance">Romance</option>
+                    <option value="Horror">Horror</option>
+                </select>
+            </div>
+            
+            <!-- Dark Mode Toggle -->
+            <div class="dark-mode-toggle">
+                <button id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Stats Section -->
+        <div class="stats">
+            <p id="movie-count">Loading movies...</p>
+        </div>
+        
+        <!-- Movies Grid -->
+        <div class="movies-grid" id="movies-container">
+            <!-- Movie cards will be dynamically inserted here -->
+        </div>
+        
+        <!-- No Results Message -->
+        <div class="no-results" id="no-results">
+            <i class="fas fa-film"></i>
+            <h2>No Movies Found</h2>
+            <p>Try adjusting your search or filter to find what you're looking for.</p>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 PopCorn. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                <a href="#"><i class="fas fa-code"></i> Portfolio</a>
+                <a href="#"><i class="fas fa-envelope"></i> Contact</a>
+            </div>
+        </div>
+    </footer>
+    <!--my script-->
+    <script src="script.js"></script>
+</body>
+</html>
